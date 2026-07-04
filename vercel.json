@@ -8,5 +8,10 @@
   "routes": [
     { "src": "/build/(.*)", "dest": "/public/build/$1" },
     { "src": "/(.*)", "dest": "/api/index.php" }
-  ]
+  ],
+  "build": {
+    "env": {
+      "NODE_VERSION": "20"
+    }
+  }
 }
